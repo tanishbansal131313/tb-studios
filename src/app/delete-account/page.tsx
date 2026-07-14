@@ -88,7 +88,7 @@ export default function DeleteAccountPage() {
                 href="mailto:support@tbstudios.online"
                 className="font-semibold underline"
               >
-                support@tbstudios.online
+                tbstudios13@gmail.com
               </a>
               .
             </p>
