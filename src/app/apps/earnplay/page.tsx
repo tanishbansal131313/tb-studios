@@ -50,10 +50,10 @@ export default function EarnPlayPage() {
 
           <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-            {/* Left */}
+           {/* Left */}
 
-            <div>
-
+<div className="relative z-20">
+  
               <p className="text-cyan-400 uppercase tracking-[0.45em] mb-5">
                 TB STUDIOS
               </p>
@@ -122,13 +122,13 @@ export default function EarnPlayPage() {
 
             </div>
 
-            {/* Right */}
+           {/* Right */}
 
-            <div className="flex justify-center">
+<div className="relative z-10 flex justify-center">
 
               <div className="relative">
 
-                <div className="absolute inset-0 bg-cyan-500/30 blur-[120px] rounded-full" />
+<div className="absolute inset-0 bg-cyan-500/30 blur-[120px] rounded-full pointer-events-none" />
 
                 <div className="relative bg-zinc-950 border border-zinc-800 rounded-[50px] p-4 shadow-2xl">
 

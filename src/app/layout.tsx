@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "../components/footer/Footer";
-
 import Navbar from "../components/navigation/Navbar";
+import Script from "next/script";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-   keywords: [
+  keywords: [
     "TB Studios",
     "Nova VPN",
     "EarnPlay",
@@ -28,13 +28,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* Google AdSense */}
+        <Script
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1349634460823258"
+          crossOrigin="anonymous"
+        />
+
         <Navbar />
 
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
 
         <Footer />
+
         <GoogleAnalytics gaId="G-927HHXZSLS" />
       </body>
     </html>
