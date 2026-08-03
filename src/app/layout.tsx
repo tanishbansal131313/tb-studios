@@ -27,7 +27,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+  <head>
+    <meta
+      name="monetag"
+      content="8111e5e5743fc69da598a720817b0a6e"
+    />
+  </head>
+  <body>
         {/* Google AdSense */}
         <Script
           async
