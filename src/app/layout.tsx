@@ -28,10 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
   <head>
-    <meta
-      name="monetag"
-      content="8111e5e5743fc69da598a720817b0a6e"
-    />
+    
   </head>
   <body>
         {/* Google AdSense */}
@@ -42,13 +39,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
 
-        {/* Monetag Multitag */}
-        <Script
-          src="https://quge5.com/88/tag.min.js"
-          strategy="afterInteractive"
-          data-zone="266342"
-          data-cfasync="false"
-        />
+        
         <Navbar />
 
         <main>{children}</main>
